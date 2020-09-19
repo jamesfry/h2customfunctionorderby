@@ -21,10 +21,10 @@ class H2functiontestApplicationTests {
 
 	@BeforeEach
 	void setup() {
-		Foo foo1 = new Foo("Foo1");
+		Foo foo1 = new Foo("Foo1", 1);
 		fooRepository.save(foo1);
 
-		Foo foo2 = new Foo("Foo2");
+		Foo foo2 = new Foo("Foo2", 2);
 		fooRepository.save(foo2);
 	}
 
